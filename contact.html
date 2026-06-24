@@ -6,47 +6,50 @@
     <title>Contact | Black Soul Roastery</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About us</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h1>Contact Black Soul Roastery</h1>
-    <div>
-      <p><b>Address:</b> Black Soul Roastery, Velvet Street 24, 26789 Coffee District</p>
-      <p><b>Phone:</b><a href="tel:+49491000000"> +49 491 000000</a></p>
-      <p><b>Email:</b> <a href="mailto:hello@blacksoulroastery.com">hello@blacksoulroastery.com</a></p>
-      <p><b>Opening hours:</b> Monday to Saturday, 8:00–20:00</p>
-    </div>
+    <main>
+      <section>
+        <h1>Contact Black Soul Roastery</h1>
+        <address>
+          <p><strong>Address:</strong> Black Soul Roastery, Velvet Street 24, 26789 Coffee District</p>
+          <p><strong>Phone:</strong> <a href="tel:+49491000000">+49 491 000000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:hello@blacksoulroastery.com">hello@blacksoulroastery.com</a></p>
+        </address>
+        <p><strong>Opening hours:</strong> Monday to Saturday, 8:00–20:00</p>
+      </section>
 
-    <!-- <div>
-      <img
-        src="https://images.pexels.com/photos/9050609/pexels-photo-9050609.jpeg"
-        alt="Close-up of diverse hands exchanging a latte in a blue cup with intricate latte art shot by Milke Jones"
-        width="300"
-      />
-    </div> -->
+      <section>
+        <h2>Send us a message</h2>
+        <form action="submit-form.php" method="post">
+          <fieldset>
+            <legend>Contact Form</legend>
+            <label for="name">Name:</label> <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label> <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label> <textarea name="message" id="message" required></textarea>
+            <button type="submit">Send message</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
 
-    <div>
-      <form action="submit-form.php" method="post">
-        <fieldset>
-          <legend>Contact Form</legend>
-
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" required></textarea>
-
-          <button type="submit">Send message</button>
-        </fieldset>
-      </form>
-    </div>
-    <div>
-      <li><a href="agb.html">AGB</a></li>
-    </div>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="agb.html">AGB</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 Black Soul Roastery. All rights reserved.</p>
+    </footer>
   </body>
 </html>
